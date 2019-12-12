@@ -1,0 +1,34 @@
+# Always place return correct value last in function or in class or in page.
+# Always check for Error First
+# Example;
+
+/** Common IF **/
+
+if (isset($_POST['file'])) {
+
+    if ( in_array($fileExtension, $allowedExtension)) {
+        // Do the Upload File
+    } else {
+        return ; // Error and/or redirect
+    }
+} else {
+    return; // Error and redirect
+}
+
+
+/** Simplified to IF **/
+
+if (!isset($_POST['file']){ 
+    return; // Error and redirect
+}
+
+if ( in_array($fileExtension, $allowedExtension) ){
+    return; // Error and redirect
+}
+
+//Do the upload file
+
+
+
+
+
