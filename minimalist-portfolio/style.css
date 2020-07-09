@@ -48,7 +48,7 @@ a{
 /* section 2 */
 .section-2{
     padding-top: 20vh;
-    width: 75%;
+    width: 80%;
 }
 
 .section-2 h2{
@@ -89,7 +89,7 @@ a{
 }
 
 /* media queres */
-@media(max-width:860px){
+@media(max-width:900px){
     .grid-2{
         grid-template-columns: 1fr;
     }
