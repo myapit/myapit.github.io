@@ -1,0 +1,9 @@
+CentOS 7 Setup Check List
+=========================
+
+1. Must Use Logical Volume Management (LVM).
+2. Disable SELinux.
+3. Add Active Directory Authentication Features. - Refer : myapit.wordpress.com
+4. Change SFTP Login & Allow SFTP Logging.
+5. Time NTP.
+6. Install Repos epel & remi.

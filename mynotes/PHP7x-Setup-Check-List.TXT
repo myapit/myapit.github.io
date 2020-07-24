@@ -1,0 +1,10 @@
+PHP7x Setup Check List
+======================
+1. Install remi repos
+2. disable function
+3. execution time
+4. display error 
+5. expose
+6. module loaded
+7. php-fpm setting
+

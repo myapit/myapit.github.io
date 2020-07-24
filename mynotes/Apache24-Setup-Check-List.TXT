@@ -1,0 +1,7 @@
+Apache 2.4 Setup Check List
+===========================
+1. Virtual Host
+2. Custom LOG
+3. Custom myhost.cnf
+4. Limit Except GET & POST
+5. SSL Setup
