@@ -1,0 +1,13 @@
+
+dnf download --source boost-devel
+rpm -ivh boost-1.60.0-10.fc25.src.rpm
+
+rpmbuild -bp boost.spec
+
+
+The rpmbuild may complain about missing build dependencies. This can be resolved using:
+
+sudo dnf builddep  boost.spec
+
+REF:
+https://askbot.fedoraproject.org/en/question/106347/how-to-install-package-sources-with-dnf/
