@@ -1,0 +1,5 @@
+
+enp0s8: \4{enp0s8}
+
+\6 for ipv6
+\4 for ipv4
