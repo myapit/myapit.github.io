@@ -9,22 +9,144 @@
 body {background-color:#ffffff;background-repeat:no-repeat;background-position:top left;background-attachment:fixed;}
 h1{font-family:Arial, sans-serif;color:#000000;background-color:#ffffff;}
 p {font-family:Georgia, serif;font-size:14px;font-style:normal;font-weight:normal;color:#000000;background-color:#ffffff;}
+/* global */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #101214;
+    color: #7A7C80;
+
+}
+
+h2,.white{
+    color: #fff;
+}
+
+a{
+    color: #7A7C80;
+    text-decoration: none;
+}
+/* section 1 */
+.section-1{
+    padding-top: 40vh;
+    padding-left: 20vw;
+    text-align: center;
+}
+
+.section-1 p{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin:0;
+}
+
+.section-1 h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.section-1 a{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+/* section 2 */
+.section-2{
+    padding-top: 20vh;
+    width: 80%;
+}
+
+.section-2 h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.section-2 p{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin:0;
+}
+
+.section-2 a{
+    display: block;
+    padding: 5px;
+    font-size: 1.2rem;
+    padding-left: 0;
+   /* width: 100px; */
+}
+/* animations / utilities */
+.section-2 a:hover{
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.section-1 a:hover{
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.white:hover{
+    position: relative;
+    padding-left: 10px;
+}
+
+/* media queres */
+@media(max-width:900px){
+    .grid-2{
+        grid-template-columns: 1fr;
+    }
+    .section-1{
+        padding:0;
+        padding-top: 5rem;
+    }
+    .section-2{
+        padding: 0;
+        padding-left: 1.5rem;
+        padding-top: 2rem;
+    }
+}
 </style>
 </head>
 <body>
-<h1>Kelas Joomla</h1>
-<h3>Links to download</h3>
+<h1>Joomla@Penang</h1>
+<h3>Links to download:</h3>
 <p>
+ <div>
 <ul>
   <li><a href="https://jaist.dl.sourceforge.net/project/xampp/XAMPP%20Windows/7.3.33/xampp-windows-x64-7.3.33-0-VC15-installer.exe/download"> XAMPP 7.3 </a></li>
   <li><a href="https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/7.4.33/xampp-windows-x64-7.4.33-0-VC15-installer.exe/download"> XAMPP 7.4 </a></li>
   <li><a href="https://downloads.joomla.org/cms/joomla3/3-10-12/Joomla_3-10-12-Stable-Full_Package.zip?format=zip"> Joomla 3.10 </a></li>
-  <li><a href="#link-to-slide"> Slide 1</a></li>
-  <!-- <li><a href="#link-to-slide2"> Slide 2 </a></li> -->
 </ul>
+</div>
 
-Rujukan :
+<div>
+  <span>Files :</span>
+  <ul>
+    <li><a href="zip/ja-start-template.zip">JA Stark Template</a></li>
+    <li><a href="zip/jFontSize-Module-1.0.zip">JFont Module</a></li>
+   <!-- <li><a href="zip/mod_eac_splwpk_1.5.zip">mod_eac_splwpk</a></li>
+    <li><a href="zip/urbanus2-joomla-3.9.27-quickstart-package.zip">Urbanus2 Quickstart</a></li>-->
+  </ul>
+</div>
+<div>
+  <span>Slide PDF :</span>
+  <li><a href="pdf/joomla-penang-day-01-intro.pdf"> Slide Day 01 - Introduction</a></li>
+ <!-- <li><a href="pdf/joomla-penang-day-02-urbanus-spbuilder.pdf"> Slide Day 02 - Urbanus &amp; SP Builder</a></li>
+  <li><a href="pdf/joomla-penang-day-02-splask.pdf"> Slide Day 02 - splask</a></li>-->
+</div>
+
+References :
 <ol>
+  <li><a href="pdf/Slide_rujukan_laman_web_SPLaSK.pdf">Slide SPLaSK @ MAMPU</a></li>
 	<li><a href="https://docs.joomla.org/Special:MyLanguage/Portal:Administrators#Article_Management"> Joomla Administrator Docs</a></li>
 	<li><a href="https://docs.joomla.org/J3.x:Installing_Joomla"> Joomla 3.x Installation Docs </a></li>
 <ol>

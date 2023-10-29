@@ -1,0 +1,15 @@
+Jadual Latihan
+
+Hari Pertama
+-Installasi XAMPP dan Joomla
+-Pengenalan Kepada Joomla
+-Penggunaan Menus, Articles dan Catagories
+-Penggunaan Extension(Component, Modules & Plugin)
+-Penggunaan Multilanguage 
+
+Hari Kedua
+-Installasi Joomla dengan Urbanus2 dan SP Builder (Pakej)
+-Penggunaan Template Urbanus2 dan SP Builder
+-SPLASK untuk Jooomla
+-Backup dan Security Joomla
+
