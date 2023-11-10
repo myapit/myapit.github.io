@@ -44,7 +44,7 @@ Open again your command prompt. And run the following command on it. To create m
 `php artisan make:model Staff -m`
 
 After that, open Staff migration  file inside **laravel-crud-app/database/migrations/** directory. And then update the function up() with the following code:
-```
+```php
 public function up()
 {
     Schema::create('staff', function (Blueprint $table) {
@@ -59,7 +59,7 @@ public function up()
 ```
 *File : app/Models/Staff.php*
 
-```
+```php
 <?php
 
 namespace App\Models;
@@ -87,7 +87,7 @@ Create a controller by using the following command on the command prompt to crea
 
 After that, visit ***app/Http/controllers*** and open the ***StaffController.php*** file. And update the following code into it:
 
-```
+```php
 <?php
 
 namespace App\Http\Controllers;
@@ -199,7 +199,7 @@ class StaffController extends Controller
 
 Then create routes for laravel crud app. So, open the ***web.php*** file from the routes directory of laravel CRUD app. And update the following routes into the ***web.php*** file:
 
-```
+```php
 use App\Http\Controllers\StaffController;
  
 Route::resource('staffs', StaffController::class);
@@ -221,7 +221,7 @@ Create directory name staffs inside the ***resources/views*** directory.
 Note that, create ***index.blade.php***, ***create.blade.php***, and ***edit.blade.php*** inside the staffs directory. And update the following code into the following files:
 
 *File : index.blade.php:*
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -283,7 +283,7 @@ Note that, create ***index.blade.php***, ***create.blade.php***, and ***edit.bla
 ```
 \
 *File: create.blade.php:*
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -359,7 +359,7 @@ Note that, create ***index.blade.php***, ***create.blade.php***, and ***edit.bla
 ```
 \
 *File: edit.blade.php:*
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
