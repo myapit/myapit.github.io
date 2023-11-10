@@ -21,7 +21,7 @@ git checkout master
 git pull
 git checkout test
 git pull
-git merge
+git merge test
 ```
 this will merge test branch to master. but test branch will remain.
 
