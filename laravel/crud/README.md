@@ -2,17 +2,17 @@
 
 ### Table of contents
 
-Step 1: Download Laravel\
-Step 2: Setup Database\
-Step 3: Create Staff Model & Migration For CRUD\
-Step 4: Create Staff Controller By Artisan Command\
-Step 5: Create Routes\
-Step 6: Create Blade Views File\
-Step 7: Run Development Server
+Step 1: Setup Laravel  
+Step 2: Setup Database   
+Step 3: Create Staff Model & Migration For CRUD  
+Step 4: Create Staff Controller By Artisan Command  
+Step 5: Create Routes  
+Step 6: Create Blade Views File  
+Step 7: Run Development Server  
 
---
-
-**Step 1: Download laravel**
+---
+\
+**Step 1: Setup laravel**
 
 First step, we download the laravel framework using php composer (https://getcomposer.org).
 Make sure install composer tools first.
