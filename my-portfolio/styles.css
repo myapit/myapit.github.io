@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    /* font-family: Arial, sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* height: 100vh; Make the container full height */
+    transition: margin-left 0.5s ease;
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Make the container full height */
+    flex-direction: column;
+}
+
+.menu {
+    width: 20%; /* Adjust the width as needed */
+    /* background-color: #333; Dark menu background color */
+    background-color: #101214;
+    color: #7A7C80;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1; /* Ensure the menu is above other elements */
+    transition: height 0.5s ease, opacity 0.5s ease;
+}
+
+.avatar img {
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+.avatar-link {
+    cursor: pointer; /* Set the cursor to pointer */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 30px; /* Adjust the size of social icons */
+    margin-right: 10px;
+}
+
+.content {
+    margin-left: 30%; /*Adjust to match the width of the menu*/
+    flex: 1; /* Make the content take up the remaining width */
+    /* padding: 20px; */
+    height: 100vh; /* Make the content full height */
+    overflow-y: auto; /* Add vertical scrollbar if needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    transition: margin-top 0.5s ease;
+}
+
+section {
+    opacity: 0;
+    padding-top: 5%;
+    margin-bottom: 40px;
+    height: 100%; /* Make each section full height */
+    transition: opacity 0.5s ease;
+}
+
+section:target {
+    opacity: 1; /* Set opacity to 1 when section is the target */
+}
+
+h1 {
+    font-size: 24px;
+}
+
+ul {
+    list-style: disc;
+}
+
+.project {
+    margin: 10px 0;
+}
+
+/* Add more styling as per your preferences */
+
+.fade-in-image { animation: fadeIn 5s; }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+@media only screen and (min-width: 600px) {
+    .container {
+        flex-direction: row; /* Display items side by side on larger screens */
+    }
+
+    .menu {
+        width: 20%; /* Make the menu 20% of the screen width */
+        height: 100%; /* Make the menu full height */
+        opacity: 1; /* Ensure the menu is visible on larger screens */
+        transition: width 0.5s ease; /* Add transition for width property */
+    }
+
+    .content {
+        margin-top: 0; /* Reset margin-top on larger screens */
+    }
+}
