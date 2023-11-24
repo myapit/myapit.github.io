@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     /* height: 100vh; Make the container full height */
-    transition: margin-left 0.5s ease;
+    /* transition: margin-left 0.5s ease; */
 }
 
 .container {
@@ -16,6 +16,7 @@ body {
 }
 
 .menu {
+    text-align: center;
     width: 20%; /* Adjust the width as needed */
     /* background-color: #333; Dark menu background color */
     background-color: #101214;
@@ -54,6 +55,12 @@ nav a {
 
 .social-icons {
     margin-top: 20px;
+    color: #fff;
+}
+.social-icons a {
+    color: #fff;
+    flex: auto;
+    padding: 5px;
 }
 
 .social-icons img {
