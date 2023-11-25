@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {
+    background-color: darkolivegreen;
     /* font-family: Arial, sans-serif; */
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -9,6 +10,10 @@ body {
     /* transition: margin-left 0.5s ease; */
 }
 
+a{
+    color: #7A7C80;
+    text-decoration: none;
+}
 .container {
     display: flex;
     height: 100vh; /* Make the container full height */
@@ -17,7 +22,7 @@ body {
 
 .menu {
     text-align: center;
-    width: 20%; /* Adjust the width as needed */
+    width: 40%; /* Adjust the width as needed */
     /* background-color: #333; Dark menu background color */
     background-color: #101214;
     color: #7A7C80;
@@ -26,16 +31,16 @@ body {
     height: 100%;
     overflow: hidden;
     z-index: 1; /* Ensure the menu is above other elements */
-    transition: height 0.5s ease, opacity 0.5s ease;
+    /* transition: height 0.5s ease, opacity 0.5s ease; */
 }
 
 .avatar img {
     border-radius: 50%;
-    max-width: 100%;
+    max-width: 70%;
 }
 
 .avatar-link {
-    cursor: pointer; /* Set the cursor to pointer */
+    cursor: pointer; /* Set the cursor to pointer on my avatar */
 }
 
 nav ul {
@@ -69,13 +74,20 @@ nav a {
 }
 
 .content {
-    margin-left: 30%; /*Adjust to match the width of the menu*/
+    background-color: darkolivegreen;
+    margin-left: 45%; /*Adjust to match the width of the menu*/
     flex: 1; /* Make the content take up the remaining width */
     /* padding: 20px; */
     height: 100vh; /* Make the content full height */
     overflow-y: auto; /* Add vertical scrollbar if needed */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    transition: margin-top 0.5s ease;
+   /* box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    /* transition: margin-top 0.5s ease; */
+}
+
+.about {
+    padding-top: 5%;
+    margin-bottom: 40px;
+    height: 100%; /* Make each section full height */
 }
 
 section {
@@ -102,6 +114,16 @@ ul {
     margin: 10px 0;
 }
 
+.project a {
+    display: block;
+}
+
+.project a:hover {
+    font-size: 1.1rem;
+    color: #8a7777;
+    cursor: pointer;
+    transition: 0.2s;
+}
 /* Add more styling as per your preferences */
 
 .fade-in-image { animation: fadeIn 5s; }
@@ -125,5 +147,6 @@ ul {
 
     .content {
         margin-top: 0; /* Reset margin-top on larger screens */
+        margin-left: 25%;
     }
 }
