@@ -4,6 +4,7 @@ body {
     background-color: darkolivegreen;
     /* font-family: Arial, sans-serif; */
     font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
     margin: 0;
     padding: 0;
     /* height: 100vh; Make the container full height */
@@ -34,9 +35,24 @@ a{
     /* transition: height 0.5s ease, opacity 0.5s ease; */
 }
 
+.avatar-name {
+    margin: 7% 0;
+    padding: 0;
+}
+
+.avatar-name h2 {
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+.avatar-name p {
+    margin: 0;
+}
+
 .avatar img {
     border-radius: 50%;
-    max-width: 70%;
+    max-width: 60%;
+    border: 2px solid #fff;
 }
 
 .avatar-link {
