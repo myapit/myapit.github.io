@@ -1,0 +1,14 @@
+#version: "3.1"
+
+services:
+  app:
+    container_name: application
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: application
+      #volumes:
+      #- ./:/var/www/html
+    ports:
+      - 8080:80
+      - 433:433
